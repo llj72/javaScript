@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 출력하기</title>
+</head>
+<body>
+    <h2>구구단 출력</h2>
+    <script>
+        //구구단 출력
+        var i; 
+        var inputNum = parseInt(prompt("단을 입력하세요"));
+
+        //숫자 오류 처리 - isNAN() 함수 사용
+        //null - 유효하지 않은 데이터(문자, 객체)
+        if(isNaN(inputNum)){
+            alert("입력이 취소되었습니다.");
+        }
+        else{for(i=1; i<10; i++){
+                document.write(inputNum + " x " + i + " = " + inputNum*i + "<br>");
+            }}
+    </script>
+</body>
+</html>
